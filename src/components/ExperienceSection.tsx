@@ -2,16 +2,10 @@
 const ExperienceSection = () => {
   const experiences = [
     {
-      period: "2007-2008",
-      company: "BEHANCE",
-      position: "UNQ WEB DESIGN",
-      description: "The portfolio that recognize the talent and effort of the best web designers, developers and agencies in the world."
-    },
-    {
-      period: "2013-2019",
-      company: "THEMEFOREST",
-      position: "PRODUCT DESIGNER",
-      description: "The portfolio that recognize the talent and effort of the best web designers, developers and agencies in the world."
+      period: "Oct-Dec 2024",
+      company: "GOOGLE",
+      position: "ANDROID DEVELOPER VIRTUAL INTERNSHIP",
+      description: "Completed Google's Android Developer Virtual Internship program, gaining hands-on experience in Android app development, learning modern development practices and Google's development tools."
     }
   ];
 

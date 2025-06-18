@@ -21,29 +21,18 @@ const AboutSection = () => {
                 Computer Science Student & Cybersecurity Enthusiast
               </p>
               
-              <div className="grid md:grid-cols-2 gap-8 text-left">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Education</h3>
-                  <div className="space-y-3">
-                    <div>
-                      <p className="font-medium text-gray-900">B.Tech in Computer Science (Cyber Security)</p>
-                      <p className="text-gray-600">CMR Technical Campus</p>
-                      <p className="text-sm text-gray-500">CGPA: 8.4/10.0 | 2022 - 2026</p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Intermediate (MPC)</p>
-                      <p className="text-gray-600">Narayana Junior College</p>
-                      <p className="text-sm text-gray-500">82.5% | 2022</p>
-                    </div>
+              <div className="text-left max-w-2xl mx-auto">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Education</h3>
+                <div className="max-h-64 overflow-y-auto border border-gray-200 rounded-lg p-4 space-y-4">
+                  <div className="border-b border-gray-100 pb-4">
+                    <p className="font-medium text-gray-900">B.Tech in Computer Science (Cyber Security)</p>
+                    <p className="text-gray-600">CMR Technical Campus</p>
+                    <p className="text-sm text-gray-500">CGPA: 8.4/10.0 | 2022 - 2026</p>
                   </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Technical Skills</h3>
-                  <div className="space-y-2">
-                    <p><span className="font-medium">Programming:</span> C, C++, Java, Python</p>
-                    <p><span className="font-medium">Course Work:</span> DSA, Operating Systems, OOPS, DBMS, Machine Learning</p>
-                    <p><span className="font-medium">Tools:</span> MySQL, AutoCAD, Tableau, Figma</p>
+                  <div>
+                    <p className="font-medium text-gray-900">Intermediate (MPC)</p>
+                    <p className="text-gray-600">Narayana Junior College</p>
+                    <p className="text-sm text-gray-500">82.5% | 2022</p>
                   </div>
                 </div>
               </div>

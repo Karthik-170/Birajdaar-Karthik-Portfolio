@@ -17,17 +17,17 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight animate-pulse">
+              <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight animate-pulse">
                 HI! I'M <span className="text-red-500">BIRAJDAAR KARTHIK</span>
               </h1>
               <div className="space-y-2">
-                <p className="text-xl text-gray-600 font-medium">
-                  <span className="text-red-500 font-bold">COMPUTER SCIENCE</span> STUDENT
+                <p className="text-lg text-gray-600 font-medium">
+                  I am a <span className="text-red-500 font-bold">COMPUTER SCIENCE STUDENT</span>
                 </p>
-                <p className="text-xl text-gray-600 font-medium">
+                <p className="text-lg text-gray-600 font-medium">
                   <span className="text-red-500 font-bold">Frontend Developer</span>
                 </p>
-                <p className="text-xl text-gray-600 font-medium">
+                <p className="text-lg text-gray-600 font-medium">
                   <span className="text-red-500 font-bold">UI/UX Designer</span>
                 </p>
               </div>
