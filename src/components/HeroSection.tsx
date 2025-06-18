@@ -18,7 +18,7 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                HI! I'M <span className="text-red-500">BIRAJDAAR</span>
+                HI! I'M <span className="text-red-500">BIRAJDAAR KARTHIK</span>
               </h1>
               <p className="text-xl text-gray-600 font-medium">
                 I AM A <span className="text-red-500 font-bold">COMPUTER SCIENCE</span> STUDENT
@@ -58,7 +58,7 @@ const HeroSection = () => {
           {/* Hero Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-lg overflow-hidden shadow-2xl">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl">
                 <img 
                   src="/lovable-uploads/1dba9dc7-f380-42a7-900c-465099a39415.png" 
                   alt="Birajdaar Karthik" 
