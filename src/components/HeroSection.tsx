@@ -1,5 +1,5 @@
 
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github, FileText } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -17,20 +17,28 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight animate-pulse">
                 HI! I'M <span className="text-red-500">BIRAJDAAR KARTHIK</span>
               </h1>
-              <p className="text-xl text-gray-600 font-medium">
-                I AM A <span className="text-red-500 font-bold">COMPUTER SCIENCE</span> STUDENT
-              </p>
+              <div className="space-y-2">
+                <p className="text-xl text-gray-600 font-medium">
+                  <span className="text-red-500 font-bold">COMPUTER SCIENCE</span> STUDENT
+                </p>
+                <p className="text-xl text-gray-600 font-medium">
+                  <span className="text-red-500 font-bold">Frontend Developer</span>
+                </p>
+                <p className="text-xl text-gray-600 font-medium">
+                  <span className="text-red-500 font-bold">UI/UX Designer</span>
+                </p>
+              </div>
             </div>
-            
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-gray-100 max-w-md">
-              <p className="text-gray-600 leading-relaxed">
-                I'm currently pursuing my Bachelor's in Computer Science, specializing in Cybersecurity. 
-                I'm skilled in C++, Java, and Data Structures & Algorithms (DSA). Right now, I'm exploring 
-                web development to become a more well-rounded developer.
-              </p>
+
+            {/* Resume Button */}
+            <div className="pt-4">
+              <button className="inline-flex items-center space-x-2 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-xl">
+                <FileText size={20} />
+                <span>Check Resume</span>
+              </button>
             </div>
 
             {/* Contact Info */}
