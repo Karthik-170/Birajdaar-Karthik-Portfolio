@@ -1,5 +1,5 @@
 
-import { User, Mail, Link } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -18,37 +18,39 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                HI! I'M <span className="text-red-500">ROBOTO</span>
+                HI! I'M <span className="text-red-500">BIRAJDAAR</span>
               </h1>
               <p className="text-xl text-gray-600 font-medium">
-                I AM AN <span className="text-red-500 font-bold">WEB</span> DEVELOPER
+                I AM A <span className="text-red-500 font-bold">COMPUTER SCIENCE</span> STUDENT
               </p>
             </div>
             
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-gray-100 max-w-md">
               <p className="text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget ex molestie, 
-                dictum tellus in, lobortis lorem. Vestibulum mollis ante quis tempor aliquam. 
-                Duis vestibulum eu mauris porta tempor.
+                I'm currently pursuing my Bachelor's in Computer Science, specializing in Cybersecurity. 
+                I'm skilled in C++, Java, and Data Structures & Algorithms (DSA). Right now, I'm exploring 
+                web development to become a more well-rounded developer.
               </p>
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2 text-gray-600">
+                <Mail size={16} />
+                <span className="text-sm">bkarthik1708@gmail.com</span>
+              </div>
+              <div className="flex items-center space-x-2 text-gray-600">
+                <span className="text-sm">📞 +91 6281023460</span>
+              </div>
             </div>
 
             {/* Social Links */}
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center hover:bg-red-500 transition-colors duration-200">
-                <span className="text-sm font-bold">f</span>
+                <Linkedin size={16} />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center hover:bg-red-500 transition-colors duration-200">
-                <span className="text-sm font-bold">t</span>
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center hover:bg-red-500 transition-colors duration-200">
-                <Link size={16} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center hover:bg-red-500 transition-colors duration-200">
-                <span className="text-sm font-bold">G</span>
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-900 text-white rounded-full flex items-center justify-center hover:bg-red-500 transition-colors duration-200">
-                <span className="text-sm font-bold">Y</span>
+                <Github size={16} />
               </a>
             </div>
           </div>
@@ -56,8 +58,12 @@ const HeroSection = () => {
           {/* Hero Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-teal-400 to-teal-600 rounded-full flex items-center justify-center shadow-2xl">
-                <User size={120} className="text-white opacity-80" />
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-lg overflow-hidden shadow-2xl">
+                <img 
+                  src="/lovable-uploads/1dba9dc7-f380-42a7-900c-465099a39415.png" 
+                  alt="Birajdaar Karthik" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Decorative elements around the image */}
               <div className="absolute -top-4 -left-4 w-16 h-16 border-4 border-red-500 rounded-full opacity-60"></div>

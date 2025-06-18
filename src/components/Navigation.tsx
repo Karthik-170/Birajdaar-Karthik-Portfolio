@@ -10,8 +10,8 @@ const Navigation = () => {
     { name: 'ABOUT', href: '#about' },
     { name: 'EXPERIENCE', href: '#experience' },
     { name: 'PORTFOLIO', href: '#portfolio' },
+    { name: 'PHOTO', href: '#photo' },
     { name: 'SERVICES', href: '#services' },
-    { name: 'BLOG', href: '#blog' },
     { name: 'CONTACT', href: '#contact' },
   ];
 
@@ -28,7 +28,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-2xl font-bold text-gray-900">
-            APORTS
+            BIRAJDAAR
           </div>
           
           {/* Desktop Navigation */}
