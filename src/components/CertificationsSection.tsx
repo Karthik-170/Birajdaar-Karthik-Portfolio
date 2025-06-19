@@ -25,7 +25,7 @@ const CertificationsSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="max-h-96 overflow-y-auto border border-gray-200 rounded-lg p-6 space-y-4">
             {certifications.map((cert, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
                 <div className="space-y-3">

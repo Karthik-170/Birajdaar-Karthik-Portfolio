@@ -1,9 +1,10 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   const navItems = [
     { name: 'HOME', href: '#home' },
@@ -11,9 +12,31 @@ const Navigation = () => {
     { name: 'EXPERIENCE', href: '#experience' },
     { name: 'PROJECTS', href: '#projects' },
     { name: 'SKILLS', href: '#skills' },
-    { name: 'CERTIFICATIONS', href: '#certifications' },
     { name: 'CONTACT', href: '#contact' },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navItems.map(item => item.href.substring(1));
+      const scrollPosition = window.scrollY + 100;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetHeight = element.offsetHeight;
+          
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -27,17 +50,21 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-2xl font-bold text-gray-900">
+          <div className="text-xl lg:text-2xl font-bold text-gray-900">
             BIRAJDAAR KARTHIK
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-sm font-medium text-gray-600 hover:text-red-500 transition-colors duration-200"
+                className={`text-sm font-medium transition-colors duration-200 ${
+                  activeSection === item.href.substring(1)
+                    ? 'text-red-500'
+                    : 'text-gray-600 hover:text-red-500'
+                }`}
               >
                 {item.name}
               </button>
@@ -63,7 +90,11 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="block w-full text-left text-sm font-medium text-gray-600 hover:text-red-500 transition-colors duration-200"
+                  className={`block w-full text-left text-sm font-medium transition-colors duration-200 ${
+                    activeSection === item.href.substring(1)
+                      ? 'text-red-500'
+                      : 'text-gray-600 hover:text-red-500'
+                  }`}
                 >
                   {item.name}
                 </button>

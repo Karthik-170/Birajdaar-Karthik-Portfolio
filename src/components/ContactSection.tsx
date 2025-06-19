@@ -25,13 +25,13 @@ const ContactSection = () => {
           <div className="space-y-4">
             <div className="flex items-center justify-center space-x-3">
               <Mail className="text-red-500" size={20} />
-              <a href="mailto:hello@roboto.dev" className="text-white hover:text-red-500 transition-colors duration-200">
-                hello@roboto.dev
+              <a href="mailto:bkarthik1708@gmail.com" className="text-white hover:text-red-500 transition-colors duration-200">
+                bkarthik1708@gmail.com
               </a>
             </div>
             <div className="flex items-center justify-center space-x-3">
               <User className="text-red-500" size={20} />
-              <span className="text-gray-300">+1 (555) 123-4567</span>
+              <span className="text-gray-300">+91 6281023460</span>
             </div>
           </div>
 

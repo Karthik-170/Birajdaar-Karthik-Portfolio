@@ -1,7 +1,34 @@
 
 import { Mail, Linkedin, Github, FileText } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
+  const [displayedText, setDisplayedText] = useState('');
+  const [currentPhase, setCurrentPhase] = useState(0);
+  
+  const phases = [
+    'Computer Science Student',
+    'Frontend Developer'
+  ];
+
+  useEffect(() => {
+    if (currentPhase >= phases.length) return;
+    
+    const currentText = phases[currentPhase];
+    const timer = setTimeout(() => {
+      if (displayedText.length < currentText.length) {
+        setDisplayedText(currentText.slice(0, displayedText.length + 1));
+      } else {
+        setTimeout(() => {
+          setCurrentPhase(currentPhase + 1);
+          setDisplayedText('');
+        }, 1000);
+      }
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [displayedText, currentPhase]);
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background decorative elements */}
@@ -17,18 +44,16 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight animate-pulse">
-                HI! I'M <span className="text-red-500">BIRAJDAAR KARTHIK</span>
+              <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+                HI! I'M
               </h1>
-              <div className="space-y-2">
+              <h2 className="text-3xl lg:text-4xl font-bold text-red-500">
+                BIRAJDAAR KARTHIK
+              </h2>
+              <div className="space-y-2 min-h-[60px]">
                 <p className="text-lg text-gray-600 font-medium">
-                  I am a <span className="text-red-500 font-bold">COMPUTER SCIENCE STUDENT</span>
-                </p>
-                <p className="text-lg text-gray-600 font-medium">
-                  <span className="text-red-500 font-bold">Frontend Developer</span>
-                </p>
-                <p className="text-lg text-gray-600 font-medium">
-                  <span className="text-red-500 font-bold">UI/UX Designer</span>
+                  <span className="text-red-500 font-bold">{displayedText}</span>
+                  {currentPhase < phases.length && <span className="animate-pulse">|</span>}
                 </p>
               </div>
             </div>
@@ -79,6 +104,16 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Scroll Button */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <button 
+          onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
+          className="w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors duration-200"
+        >
+          ↓
+        </button>
       </div>
     </section>
   );

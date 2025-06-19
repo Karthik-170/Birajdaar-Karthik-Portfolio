@@ -3,40 +3,24 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       category: "Frontend",
-      skills: [
-        { name: "HTML/CSS", level: 95 },
-        { name: "JavaScript", level: 90 },
-        { name: "React", level: 85 }
-      ]
+      skills: ["HTML/CSS", "JavaScript", "React"]
     },
     {
       category: "Backend",
-      skills: [
-        { name: "Node.js", level: 80 },
-        { name: "Java", level: 85 },
-        { name: "Python", level: 75 }
-      ]
+      skills: ["Node.js", "Java", "Python"]
     },
     {
       category: "Languages",
-      skills: [
-        { name: "C++", level: 90 },
-        { name: "Java", level: 85 },
-        { name: "JavaScript", level: 90 }
-      ]
+      skills: ["C++", "Java", "JavaScript"]
     },
     {
       category: "Others",
-      skills: [
-        { name: "UI/UX Design", level: 88 },
-        { name: "Figma", level: 92 },
-        { name: "Cybersecurity", level: 80 }
-      ]
+      skills: ["UI/UX Design", "Figma", "Cybersecurity"]
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="skills" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <p className="text-sm text-red-500 font-medium uppercase tracking-wide">
@@ -53,19 +37,10 @@ const SkillsSection = () => {
             {skillCategories.map((category, categoryIndex) => (
               <div key={categoryIndex} className="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
                 <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">{category.category}</h3>
-                <div className="space-y-4">
+                <div className="grid grid-cols-1 gap-3">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-2">
-                      <div className="flex justify-between items-center">
-                        <span className="font-medium text-gray-900 text-sm">{skill.name}</span>
-                        <span className="text-xs text-gray-600">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2">
-                        <div 
-                          className="bg-gradient-to-r from-red-500 to-red-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+                    <div key={skillIndex} className="bg-white border border-gray-200 rounded-lg p-3 text-center hover:border-red-300 hover:shadow-sm transition-all duration-200">
+                      <span className="font-medium text-gray-900 text-sm">{skill}</span>
                     </div>
                   ))}
                 </div>
