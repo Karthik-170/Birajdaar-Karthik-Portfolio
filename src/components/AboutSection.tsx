@@ -5,17 +5,17 @@ const AboutSection = () => {
       institution: "CMR Technical Campus",
       location: "Hyderabad",
       degree: "Bachelor of Technology - BTech, Computer Science and Engineering with Artificial Intelligence And Machine Learning",
-      duration: "Dec 2021 - May 2025",
-      grade: "Grade: 8.43 CGPA",
+      duration: "Dec 2021 - May 2026",
+      grade: "Grade: 8.49 CGPA",
       logo: "🎓",
-      description: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering with Artificial Intelligence And Machine Learning at CMR Technical Campus, Hyderabad. I have completed 5 semesters and have a CGPA of 8.43. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others."
+      description: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering with Artificial Intelligence And Machine Learning at CMR Technical Campus, Hyderabad. I have completed 5 semesters and have a CGPA of 8.49. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others."
     },
     {
       institution: "Narayana Junior College",
       location: "",
       degree: "Intermediate (MPC)",
       duration: "2022",
-      grade: "82.5%",
+      grade: "8.49%",
       logo: "📚",
       description: "Completed intermediate education with Mathematics, Physics, and Chemistry."
     },

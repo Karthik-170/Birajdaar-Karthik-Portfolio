@@ -50,9 +50,14 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
-              <h1 className="text-xl lg:text-2xl font-medium text-gray-300">
-                HI! I'M
-              </h1>
+              <div className="flex flex-col lg:flex-row lg:items-baseline lg:space-x-4 space-y-2 lg:space-y-0">
+                <h1 className="text-xl lg:text-2xl font-medium text-gray-300">
+                  HI! I'M
+                </h1>
+                <p className="text-lg text-gray-400 font-medium">
+                  I'm a <span className="text-red-500 font-bold">Computer Science Student</span>
+                </p>
+              </div>
               <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
                 BIRAJDAAR
               </h2>
@@ -60,22 +65,11 @@ const HeroSection = () => {
                 KARTHIK
               </h2>
               <div className="space-y-2 min-h-[80px] flex flex-col items-center lg:items-start">
-                <p className="text-lg text-gray-400 font-medium">
-                  I'm a
-                </p>
                 <p className="text-2xl lg:text-3xl font-bold">
                   <span className="text-red-500">{displayedText}</span>
                   <span className="animate-pulse text-red-500">|</span>
                 </p>
               </div>
-            </div>
-
-            {/* Resume Button */}
-            <div className="pt-4 flex justify-center lg:justify-start">
-              <button className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-medium transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105">
-                <FileText size={20} />
-                <span>Check Resume</span>
-              </button>
             </div>
           </div>
 
