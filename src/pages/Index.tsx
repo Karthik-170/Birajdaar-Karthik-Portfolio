@@ -10,18 +10,14 @@ import ContactSection from '../components/ContactSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-900">
       <Navigation />
       <HeroSection />
       <AboutSection />
       <ExperienceSection />
       <ProjectsSection />
-      <div id="skills">
-        <SkillsSection />
-      </div>
-      <div id="certifications">
-        <CertificationsSection />
-      </div>
+      <SkillsSection />
+      <CertificationsSection />
       <ContactSection />
     </div>
   );

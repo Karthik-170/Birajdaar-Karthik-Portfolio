@@ -1,5 +1,5 @@
 
-import { Mail, User, Link } from 'lucide-react';
+import { Mail, User, Send, Rocket } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -15,39 +15,87 @@ const ContactSection = () => {
           <div className="w-16 h-1 bg-red-500 mx-auto"></div>
         </div>
 
-        <div className="max-w-2xl mx-auto text-center space-y-8">
+        <div className="max-w-2xl mx-auto text-center space-y-8 mb-12">
           <p className="text-gray-300 leading-relaxed text-lg">
-            I'm always interested in new opportunities and exciting projects. 
-            Whether you're a startup looking to build your first product or an 
-            established company wanting to innovate, let's create something amazing together.
+            Feel free to reach out to me for any questions or opportunities!
           </p>
+        </div>
 
-          <div className="space-y-4">
-            <div className="flex items-center justify-center space-x-3">
-              <Mail className="text-red-500" size={20} />
-              <a href="mailto:bkarthik1708@gmail.com" className="text-white hover:text-red-500 transition-colors duration-200">
-                bkarthik1708@gmail.com
-              </a>
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
+                Email Me <Rocket className="w-6 h-6 text-red-500" />
+              </h3>
             </div>
-            <div className="flex items-center justify-center space-x-3">
-              <User className="text-red-500" size={20} />
-              <span className="text-gray-300">+91 6281023460</span>
-            </div>
-          </div>
 
-          <div className="flex justify-center space-x-6 pt-8">
-            <a href="#" className="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
-              <span className="text-sm font-bold">f</span>
-            </a>
-            <a href="#" className="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
-              <span className="text-sm font-bold">t</span>
-            </a>
-            <a href="#" className="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
-              <Link size={20} />
-            </a>
-            <a href="#" className="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
-              <span className="text-sm font-bold">G</span>
-            </a>
+            <form className="space-y-6">
+              <div>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200"
+                />
+              </div>
+              
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200"
+                />
+              </div>
+              
+              <div>
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200"
+                />
+              </div>
+              
+              <div>
+                <textarea
+                  placeholder="Message"
+                  rows={6}
+                  className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 resize-none"
+                ></textarea>
+              </div>
+              
+              <button
+                type="submit"
+                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                Send
+              </button>
+            </form>
+
+            <div className="mt-12 pt-8 border-t border-gray-700">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex items-center justify-center space-x-3 bg-gray-700/30 rounded-xl p-4">
+                  <Mail className="text-red-500" size={20} />
+                  <a href="mailto:bkarthik1708@gmail.com" className="text-white hover:text-red-500 transition-colors duration-200">
+                    bkarthik1708@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center justify-center space-x-3 bg-gray-700/30 rounded-xl p-4">
+                  <User className="text-red-500" size={20} />
+                  <span className="text-white">+91 6281023460</span>
+                </div>
+              </div>
+
+              <div className="flex justify-center space-x-6 pt-8">
+                <a href="#" className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-110">
+                  <span className="text-sm font-bold">L</span>
+                </a>
+                <a href="#" className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full flex items-center justify-center hover:from-gray-800 hover:to-gray-900 transition-all duration-200 transform hover:scale-110">
+                  <span className="text-sm font-bold">G</span>
+                </a>
+                <a href="#" className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full flex items-center justify-center hover:from-purple-700 hover:to-pink-700 transition-all duration-200 transform hover:scale-110">
+                  <span className="text-sm font-bold">✦</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
