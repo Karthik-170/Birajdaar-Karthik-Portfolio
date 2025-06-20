@@ -5,15 +5,13 @@ const ProjectsSection = () => {
       title: "Real-Time AI Generator",
       image: "/lovable-uploads/bebc7899-dfc8-44d5-bcb4-d95a00058979.png",
       tools: ["HTML", "CSS", "JavaScript", "AI API"],
-      description: "I developed an innovative, web-based application that leverages advanced AI models to convert textual prompts into high-fidelity images. The project integrates modern web technologies (HTML, CSS) with a reliable image generation API to offer an intuitive and responsive user interface.",
-      category: "WEB Apps"
+      description: "I developed an innovative, web-based application that leverages advanced AI models to convert textual prompts into high-fidelity images. The project integrates modern web technologies (HTML, CSS) with a reliable image generation API to offer an intuitive and responsive user interface."
     },
     {
       title: "ML Approach using Statistical Models for Early Detection of Cardiac Arrest",
       image: "/lovable-uploads/76aee953-03b0-4dea-b6f0-d75416477d70.png",
       tools: ["Machine Learning", "Statistical Models", "Healthcare AI", "Python"],
-      description: "By analyzing key vital signs—heart rate, oxygen levels, breathing rate, and temperature etc. This AI-powered approach enhances early detection, enabling doctors to respond swiftly and take preventive measures.",
-      category: "ML Apps"
+      description: "By analyzing key vital signs—heart rate, oxygen levels, breathing rate, and temperature etc. This AI-powered approach enhances early detection, enabling doctors to respond swiftly and take preventive measures."
     }
   ];
 
@@ -76,12 +74,9 @@ const ProjectsSection = () => {
                       <p className="text-gray-400 leading-relaxed text-sm">{project.description}</p>
                     </div>
                     
-                    <div className="pt-4 flex gap-4">
-                      <button className="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-purple-500/25 backdrop-blur-sm border border-white/10">
+                    <div className="pt-4">
+                      <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-purple-500/25 backdrop-blur-sm border border-white/10">
                         View Details
-                      </button>
-                      <button className="px-6 py-3 bg-gray-700/50 hover:bg-gray-600/60 text-gray-300 hover:text-white rounded-xl font-medium transition-all duration-300 backdrop-blur-sm border border-gray-600/50 hover:border-gray-500/60">
-                        Live Demo
                       </button>
                     </div>
                   </div>

@@ -28,9 +28,9 @@ const HeroSection = () => {
         setTimeout(() => {
           setCurrentPhase(currentPhase + 1);
           setDisplayedText('');
-        }, 2000); // Wait 2 seconds before next phase
+        }, 1500); // Reduced from 2000ms to 1500ms
       }
-    }, 100);
+    }, 50); // Reduced from 100ms to 50ms for faster typing
 
     return () => clearTimeout(timer);
   }, [displayedText, currentPhase]);
@@ -68,6 +68,14 @@ const HeroSection = () => {
                   <span className="animate-pulse text-red-500">|</span>
                 </p>
               </div>
+            </div>
+            
+            {/* Check Resume Button */}
+            <div className="flex justify-center lg:justify-start">
+              <button className="flex items-center gap-3 bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-red-500/25">
+                <FileText className="w-6 h-6" />
+                Check Resume
+              </button>
             </div>
           </div>
 
