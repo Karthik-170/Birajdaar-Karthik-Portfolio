@@ -34,15 +34,6 @@ const ProjectsSection = () => {
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.</p>
         </div>
 
-        <div className="text-center mb-12">
-          <div className="inline-flex bg-gray-800/60 backdrop-blur-sm rounded-full p-1 border border-gray-700/50 shadow-xl">
-            <button className="px-6 py-2 rounded-full text-purple-400 bg-gray-700/80 font-medium backdrop-blur-sm border border-purple-500/30 shadow-lg">All</button>
-            <button className="px-6 py-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700/50 transition-all duration-300">WEB Apps</button>
-            <button className="px-6 py-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700/50 transition-all duration-300">JAVA Apps</button>
-            <button className="px-6 py-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700/50 transition-all duration-300">ML Apps</button>
-          </div>
-        </div>
-
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
