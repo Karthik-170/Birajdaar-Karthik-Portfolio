@@ -31,53 +31,52 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-900 text-white">
+    <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="space-y-8 text-center">
             <div className="space-y-4">
-              <div className="inline-block bg-red-500 text-white px-4 py-2 rounded text-sm font-medium uppercase tracking-wide">
+              <div className="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
                 ABOUT ME
               </div>
-              <div className="w-16 h-1 bg-red-500 mx-auto"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
             </div>
 
-            <div className="space-y-6">
-              <div className="text-center max-w-2xl mx-auto">
-                <h3 className="text-3xl font-bold text-white mb-8">Education</h3>
-                <p className="text-gray-400 mb-8">My education has been a journey of self-discovery and growth. My educational details are as follows.</p>
+            <div className="space-y-12">
+              <div className="text-center max-w-4xl mx-auto">
+                <h3 className="text-4xl lg:text-5xl font-bold text-white mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Education</h3>
                 
-                <div className="relative max-h-96 overflow-y-auto border border-gray-700 rounded-2xl bg-gray-800/30 backdrop-blur-sm custom-scrollbar">
-                  <div className="p-6 space-y-6">
+                <div className="relative max-h-[500px] overflow-y-auto border-2 border-gray-600 rounded-3xl bg-gray-900/60 backdrop-blur-xl shadow-2xl advanced-scrollbar">
+                  <div className="p-8 space-y-8">
                     {educationData.map((edu, index) => (
-                      <div key={index} className="relative">
+                      <div key={index} className="relative group">
                         {index < educationData.length - 1 && (
-                          <div className="absolute left-12 top-20 w-0.5 h-full bg-gradient-to-b from-purple-500 to-transparent"></div>
+                          <div className="absolute left-12 top-24 w-1 h-full bg-gradient-to-b from-purple-500 via-pink-500 to-transparent rounded-full"></div>
                         )}
                         
-                        <div className="flex gap-6 p-6 bg-gray-800/50 border border-gray-700 rounded-xl hover:bg-gray-800/70 hover:border-purple-500/50 transition-all duration-300 group">
+                        <div className="flex gap-8 p-8 bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-2 border-gray-700/50 rounded-2xl hover:bg-gradient-to-br hover:from-gray-700/80 hover:to-gray-800/80 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 transform hover:-translate-y-2 group backdrop-blur-sm">
                           <div className="flex-shrink-0">
-                            <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                            <div className="w-20 h-20 bg-gradient-to-br from-purple-600 via-pink-600 to-red-600 rounded-full flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-500 shadow-xl shadow-purple-500/30">
                               {edu.logo}
                             </div>
                           </div>
                           
                           <div className="flex-1 text-left">
-                            <div className="flex items-start justify-between mb-3">
+                            <div className="flex items-start justify-between mb-4">
                               <div>
-                                <h4 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                                <h4 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300">
                                   {edu.institution}{edu.location && `, ${edu.location}`}
                                 </h4>
-                                <p className="text-gray-300 font-medium">{edu.degree}</p>
+                                <p className="text-gray-300 font-semibold text-lg mt-1">{edu.degree}</p>
                               </div>
-                              <div className="w-4 h-4 rounded-full bg-purple-500 border-4 border-gray-800 flex-shrink-0 mt-2"></div>
+                              <div className="w-5 h-5 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 border-4 border-gray-800 flex-shrink-0 mt-2 shadow-lg animate-pulse"></div>
                             </div>
                             
-                            <p className="text-purple-400 font-medium mb-2">{edu.duration}</p>
-                            <p className="text-green-400 font-semibold mb-3">{edu.grade}</p>
+                            <p className="text-purple-400 font-bold text-lg mb-3">{edu.duration}</p>
+                            <p className="text-green-400 font-bold text-lg mb-4">{edu.grade}</p>
                             
                             {edu.description && (
-                              <p className="text-gray-400 text-sm leading-relaxed">{edu.description}</p>
+                              <p className="text-gray-400 leading-relaxed">{edu.description}</p>
                             )}
                           </div>
                         </div>
@@ -91,20 +90,23 @@ const AboutSection = () => {
         </div>
       </div>
       
-      <style jsx>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 6px;
+      <style>{`
+        .advanced-scrollbar::-webkit-scrollbar {
+          width: 8px;
         }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: rgba(55, 65, 81, 0.3);
-          border-radius: 3px;
+        .advanced-scrollbar::-webkit-scrollbar-track {
+          background: rgba(31, 41, 55, 0.5);
+          border-radius: 10px;
+          margin: 10px;
         }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: linear-gradient(to bottom, #8b5cf6, #ec4899);
-          border-radius: 3px;
+        .advanced-scrollbar::-webkit-scrollbar-thumb {
+          background: linear-gradient(135deg, #8b5cf6, #ec4899, #ef4444);
+          border-radius: 10px;
+          border: 2px solid rgba(31, 41, 55, 0.5);
         }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: linear-gradient(to bottom, #7c3aed, #db2777);
+        .advanced-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: linear-gradient(135deg, #7c3aed, #db2777, #dc2626);
+          box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
         }
       `}</style>
     </section>
