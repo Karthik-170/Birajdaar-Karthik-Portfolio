@@ -7,7 +7,7 @@ const HeroSection = () => {
   const [currentPhase, setCurrentPhase] = useState(0);
   
   const phases = [
-    'Computer Science Student',
+    'Cyber Security Student',
     'Frontend Developer',
     'UI/UX Designer'
   ];
@@ -50,22 +50,20 @@ const HeroSection = () => {
           {/* Content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
-              <div className="flex flex-col lg:flex-row lg:items-baseline lg:space-x-4 space-y-2 lg:space-y-0">
+              <div className="space-y-4">
                 <h1 className="text-xl lg:text-2xl font-medium text-gray-300">
                   HI! I'M
                 </h1>
-                <p className="text-lg text-gray-400 font-medium">
-                  I'm a <span className="text-red-500 font-bold">Computer Science Student</span>
-                </p>
+                <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+                  BIRAJDAAR
+                </h2>
+                <h2 className="text-4xl lg:text-6xl font-bold text-red-500 leading-tight">
+                  KARTHIK
+                </h2>
               </div>
-              <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
-                BIRAJDAAR
-              </h2>
-              <h2 className="text-4xl lg:text-6xl font-bold text-red-500 leading-tight">
-                KARTHIK
-              </h2>
               <div className="space-y-2 min-h-[80px] flex flex-col items-center lg:items-start">
                 <p className="text-2xl lg:text-3xl font-bold">
+                  <span className="text-white">I'm a </span>
                   <span className="text-red-500">{displayedText}</span>
                   <span className="animate-pulse text-red-500">|</span>
                 </p>
