@@ -1,5 +1,6 @@
 
-import { Mail, User, Send, Rocket } from 'lucide-react';
+import { Rocket } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -71,29 +72,27 @@ const ContactSection = () => {
             </form>
 
             <div className="mt-12 pt-8 border-t border-gray-700">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="flex items-center justify-center space-x-3 bg-gray-700/30 rounded-xl p-4">
-                  <Mail className="text-red-500" size={20} />
-                  <a href="mailto:bkarthik1708@gmail.com" className="text-white hover:text-red-500 transition-colors duration-200">
-                    bkarthik1708@gmail.com
-                  </a>
-                </div>
-                <div className="flex items-center justify-center space-x-3 bg-gray-700/30 rounded-xl p-4">
-                  <User className="text-red-500" size={20} />
-                  <span className="text-white">+91 6281023460</span>
-                </div>
+              <div className="flex justify-center space-x-6">
+                <a 
+                  href="https://www.linkedin.com/in/birajdaar-karthik-704181259/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-110"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a 
+                  href="https://github.com/Karthik-170"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full flex items-center justify-center hover:from-gray-800 hover:to-gray-900 transition-all duration-200 transform hover:scale-110"
+                >
+                  <Github className="w-6 h-6" />
+                </a>
               </div>
-
-              <div className="flex justify-center space-x-6 pt-8">
-                <a href="#" className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-110">
-                  <span className="text-sm font-bold">L</span>
-                </a>
-                <a href="#" className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full flex items-center justify-center hover:from-gray-800 hover:to-gray-900 transition-all duration-200 transform hover:scale-110">
-                  <span className="text-sm font-bold">G</span>
-                </a>
-                <a href="#" className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full flex items-center justify-center hover:from-purple-700 hover:to-pink-700 transition-all duration-200 transform hover:scale-110">
-                  <span className="text-sm font-bold">✦</span>
-                </a>
+              
+              <div className="text-center mt-8">
+                <p className="text-gray-400">© 2025 All rights reserved.</p>
               </div>
             </div>
           </div>

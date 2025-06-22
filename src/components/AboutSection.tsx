@@ -1,20 +1,21 @@
+
 const AboutSection = () => {
   const educationData = [
     {
       institution: "CMR Technical Campus",
       location: "Hyderabad",
       degree: "Bachelor of Technology - BTech, Computer Science and Engineering with Cyber Security",
-      duration: "Dec 2021 - May 2026",
+      duration: "2022 - 2026",
       grade: "Grade: 8.49 CGPA",
       logo: "🎓",
-      description: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering with Cyber Security at CMR Technical Campus, Hyderabad. I have completed 5 semesters and have a CGPA of 8.49. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others."
+      description: "Currently pursuing Bachelor's degree in Computer Science and Engineering with Cyber Security."
     },
     {
       institution: "Narayana Junior College",
       location: "",
       degree: "Intermediate (MPC)",
       duration: "2022",
-      grade: "8.49%",
+      grade: "82.5%",
       logo: "📚",
       description: "Completed intermediate education with Mathematics, Physics, and Chemistry."
     },
@@ -42,6 +43,17 @@ const AboutSection = () => {
             </div>
 
             <div className="space-y-12">
+              {/* About Me Description */}
+              <div className="text-center max-w-4xl mx-auto">
+                <p className="text-gray-300 leading-relaxed text-lg mb-12">
+                  Hi! I'm Karthik — a passionate developer and cybersecurity enthusiast with a solid foundation in programming and full-stack web development. I'm currently pursuing a Bachelor's degree in Computer Science and Engineering with a specialization in Cybersecurity at CMR Technical Campus.
+                  <br /><br />
+                  Proficient in Java and Data Structures & Algorithms (DSA), I enjoy building efficient, user-friendly web applications using modern technologies.
+                  <br /><br />
+                  Driven by curiosity and a commitment to continuous learning, I aim to bridge the gap between secure systems and innovative development. Let's connect and collaborate to build impactful, secure solutions!
+                </p>
+              </div>
+
               <div className="text-center max-w-4xl mx-auto">
                 <h3 className="text-4xl lg:text-5xl font-bold text-white mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Education</h3>
                 

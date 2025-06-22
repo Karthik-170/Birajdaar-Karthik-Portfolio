@@ -49,11 +49,8 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8 text-center lg:text-left">
-            <div className="space-y-4">
+            <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-xl lg:text-2xl font-medium text-gray-300">
-                  HI! I'M
-                </h1>
                 <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
                   BIRAJDAAR
                 </h2>
@@ -70,12 +67,24 @@ const HeroSection = () => {
               </div>
             </div>
             
-            {/* Check Resume Button */}
+            {/* Developer Description */}
+            <div className="max-w-2xl">
+              <p className="text-gray-300 leading-relaxed text-lg">
+                I am a passionate developer with strong skills in Java, Data Structures and Algorithms (DSA), and full-stack web development. I specialize in building efficient, responsive, and user-friendly web applications using modern technologies and best practices.
+              </p>
+            </div>
+            
+            {/* Download Resume Button */}
             <div className="flex justify-center lg:justify-start">
-              <button className="flex items-center gap-3 bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-red-500/25">
+              <a 
+                href="https://drive.google.com/file/d/18OYgN6M1UIFn-Eh0tOL19s30LsjOsHMf/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-red-500/25"
+              >
                 <FileText className="w-6 h-6" />
-                Check Resume
-              </button>
+                Download Resume
+              </a>
             </div>
           </div>
 

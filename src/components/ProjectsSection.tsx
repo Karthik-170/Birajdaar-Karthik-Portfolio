@@ -2,10 +2,10 @@
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Real-Time AI Generator",
-      image: "/lovable-uploads/bebc7899-dfc8-44d5-bcb4-d95a00058979.png",
-      tools: ["HTML", "CSS", "JavaScript", "AI API"],
-      description: "I developed an innovative, web-based application that leverages advanced AI models to convert textual prompts into high-fidelity images. The project integrates modern web technologies (HTML, CSS) with a reliable image generation API to offer an intuitive and responsive user interface."
+      title: "Crypto Pay",
+      image: "/lovable-uploads/86a7d557-3fff-40bd-9b6d-56fd565c71bc.png",
+      tools: ["Blockchain", "Cryptocurrency", "Web3", "JavaScript"],
+      description: "A secure cryptocurrency payment platform that enables seamless digital transactions with advanced blockchain technology integration."
     },
     {
       title: "ML Approach using Statistical Models for Early Detection of Cardiac Arrest",
@@ -75,9 +75,14 @@ const ProjectsSection = () => {
                     </div>
                     
                     <div className="pt-4">
-                      <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-purple-500/25 backdrop-blur-sm border border-white/10">
-                        View Details
-                      </button>
+                      <a 
+                        href="https://github.com/Karthik-170"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-purple-500/25 backdrop-blur-sm border border-white/10 inline-block text-center"
+                      >
+                        View in Github
+                      </a>
                     </div>
                   </div>
                 </div>

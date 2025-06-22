@@ -2,16 +2,25 @@
 const CertificationsSection = () => {
   const certifications = [
     {
-      title: "Certification of completion of Java Full Stack",
-      issuer: "Smart Coder",
-      icon: "☕",
-      color: "from-orange-500 to-red-500"
-    },
-    {
       title: "Cisco Introduction to Cyber Security",
       issuer: "Cisco",
+      year: "2024",
       icon: "🔒",
       color: "from-blue-500 to-cyan-500"
+    },
+    {
+      title: "Smart Coder",
+      issuer: "Smart Coder",
+      year: "2024",
+      icon: "💻",
+      color: "from-green-500 to-teal-500"
+    },
+    {
+      title: "Certification of completion of Java Full Stack",
+      issuer: "Edu Skills",
+      year: "2025",
+      icon: "☕",
+      color: "from-orange-500 to-red-500"
     }
   ];
 
@@ -51,6 +60,7 @@ const CertificationsSection = () => {
                             {cert.title}
                           </h3>
                           <p className="text-red-400 font-bold text-lg mt-3">{cert.issuer}</p>
+                          <p className="text-purple-400 font-bold text-lg mt-2">{cert.year}</p>
                         </div>
                         <div className="w-5 h-5 rounded-full bg-gradient-to-r from-green-400 to-emerald-500 border-4 border-gray-800 flex-shrink-0 mt-2 shadow-lg animate-pulse"></div>
                       </div>
