@@ -14,7 +14,6 @@ const HeroSection = () => {
 
   useEffect(() => {
     if (currentPhase >= phases.length) {
-      // Reset to loop through phases continuously
       setCurrentPhase(0);
       setDisplayedText('');
       return;
@@ -30,7 +29,7 @@ const HeroSection = () => {
           setDisplayedText('');
         }, 1500);
       }
-    }, 30);
+    }, 15);
 
     return () => clearTimeout(timer);
   }, [displayedText, currentPhase]);
@@ -48,14 +47,14 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-6 text-center lg:text-left">
+          <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-6">
               <div className="space-y-3">
                 <p className="text-2xl lg:text-3xl font-bold text-white">I'm</p>
-                <h1 className="text-3xl lg:text-5xl font-bold text-white leading-tight">
+                <h1 className="text-2xl lg:text-4xl font-bold text-white leading-tight">
                   BIRAJDAAR
                 </h1>
-                <h1 className="text-3xl lg:text-5xl font-bold text-red-500 leading-tight">
+                <h1 className="text-2xl lg:text-4xl font-bold text-red-500 leading-tight">
                   KARTHIK
                 </h1>
               </div>

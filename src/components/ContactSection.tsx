@@ -1,5 +1,5 @@
 
-import { Rocket, Mail, Phone, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -15,102 +15,72 @@ const ContactSection = () => {
           <div className="w-16 h-1 bg-red-500 mx-auto"></div>
         </div>
 
-        <div className="max-w-2xl mx-auto text-center space-y-8 mb-12">
-          <p className="text-gray-300 leading-relaxed text-lg">
-            Feel free to reach out to me for any questions or opportunities!
-          </p>
-        </div>
-
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-white mb-2 flex items-center justify-center gap-2">
-                Email Me <Rocket className="w-6 h-6 text-red-500" />
-              </h3>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-xl font-bold text-white mb-6">Quick Links</h3>
+              <ul className="space-y-3">
+                <li><a href="#home" className="text-gray-300 hover:text-red-500 transition-colors">Home</a></li>
+                <li><a href="#about" className="text-gray-300 hover:text-red-500 transition-colors">About</a></li>
+                <li><a href="#skills" className="text-gray-300 hover:text-red-500 transition-colors">Skills</a></li>
+                <li><a href="#projects" className="text-gray-300 hover:text-red-500 transition-colors">Projects</a></li>
+                <li><a href="#contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</a></li>
+              </ul>
             </div>
 
-            <form className="space-y-6">
-              <div>
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200"
-                />
-              </div>
-              
-              <div>
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200"
-                />
-              </div>
-              
-              <div>
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200"
-                />
-              </div>
-              
-              <div>
-                <textarea
-                  placeholder="Message"
-                  rows={6}
-                  className="w-full bg-gray-700/50 border border-gray-600 rounded-xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 resize-none"
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                Send
-              </button>
-            </form>
+            {/* Skills */}
+            <div>
+              <h3 className="text-xl font-bold text-white mb-6">Skills</h3>
+              <ul className="space-y-3">
+                <li className="text-gray-300">Web Development</li>
+                <li className="text-gray-300">Java Development</li>
+                <li className="text-gray-300">React</li>
+                <li className="text-gray-300">Node.js</li>
+                <li className="text-gray-300">Cybersecurity</li>
+              </ul>
+            </div>
 
-            <div className="mt-12 pt-8 border-t border-gray-700">
-              <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
-                {/* Left side - Contact info */}
-                <div className="flex flex-col space-y-3 text-center lg:text-left">
-                  <div className="flex items-center justify-center lg:justify-start space-x-3">
-                    <Mail className="w-5 h-5 text-red-500" />
-                    <span className="text-gray-300">bkarthik1708@gmail.com</span>
-                  </div>
-                  <div className="flex items-center justify-center lg:justify-start space-x-3">
-                    <Phone className="w-5 h-5 text-red-500" />
-                    <span className="text-gray-300">+91 6281023460</span>
-                  </div>
+            {/* Contact Info */}
+            <div className="md:col-span-2">
+              <h3 className="text-xl font-bold text-white mb-6">Contact Me</h3>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-red-500" />
+                  <span className="text-gray-300">bkarthik1708@gmail.com</span>
                 </div>
-
-                {/* Right side - Social links */}
-                <div className="flex space-x-6">
-                  <a 
-                    href="https://www.linkedin.com/in/birajdaar-karthik-704181259/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-110"
-                  >
-                    <Linkedin className="w-6 h-6" />
-                  </a>
-                  <a 
-                    href="https://github.com/Karthik-170"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full flex items-center justify-center hover:from-gray-800 hover:to-gray-900 transition-all duration-200 transform hover:scale-110"
-                  >
-                    <Github className="w-6 h-6" />
-                  </a>
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-red-500" />
+                  <span className="text-gray-300">+91 6281023460</span>
                 </div>
               </div>
-
-              <hr className="border-gray-700 my-8" />
               
-              <div className="text-center">
-                <p className="text-gray-400">© 2025 All rights reserved.</p>
+              {/* Social Links */}
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.linkedin.com/in/birajdaar-karthik-704181259/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-110"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a 
+                  href="https://github.com/Karthik-170"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full flex items-center justify-center hover:from-gray-800 hover:to-gray-900 transition-all duration-200 transform hover:scale-110"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
               </div>
             </div>
+          </div>
+
+          <hr className="border-gray-700 mb-8" />
+          
+          <div className="text-center">
+            <p className="text-gray-400">© 2025 All rights reserved.</p>
           </div>
         </div>
       </div>
