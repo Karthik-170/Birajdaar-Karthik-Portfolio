@@ -17,7 +17,7 @@ const ExperienceSection = () => {
             EXPERIENCE
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
-            MY EXPERIENCE
+            EXPERIENCE
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>

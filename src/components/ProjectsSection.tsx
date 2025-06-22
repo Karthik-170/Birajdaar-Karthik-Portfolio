@@ -5,7 +5,7 @@ const ProjectsSection = () => {
       title: "Crypto Pay",
       image: "/lovable-uploads/86a7d557-3fff-40bd-9b6d-56fd565c71bc.png",
       tools: ["Blockchain", "Cryptocurrency", "Web3", "JavaScript"],
-      description: "A secure cryptocurrency payment platform that enables seamless digital transactions with advanced blockchain technology integration."
+      description: "A secure cryptocurrency payment platform that enables seamless digital transactions with advanced blockchain technology integration. It ensures end-to-end encryption, fast settlements, and minimal transaction fees."
     },
     {
       title: "ML Approach using Statistical Models for Early Detection of Cardiac Arrest",
@@ -20,10 +20,10 @@ const ProjectsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-6 mb-16">
           <div className="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
-            PORTFOLIO
+            PROJECTS
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
-            PROJECTS
+            MY PROJECTS
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>

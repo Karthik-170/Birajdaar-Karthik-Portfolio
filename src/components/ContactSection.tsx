@@ -1,6 +1,7 @@
 
 import { Mail, Phone, Linkedin, Github, Rocket } from 'lucide-react';
 import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ const ContactSection = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -18,10 +21,35 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    
+    try {
+      // Simulate form submission
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+      
+      // Reset form
+      setFormData({
+        email: '',
+        name: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -96,18 +124,19 @@ const ContactSection = () => {
               
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white py-3 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-purple-500/25"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white py-3 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-purple-500/25 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send
+                {isSubmitting ? 'Sending...' : 'Send'}
               </button>
             </form>
           </div>
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-center">
             {/* Quick Links */}
-            <div className="text-center md:text-left">
+            <div>
               <h3 className="text-xl font-bold text-white mb-6">Quick Links</h3>
               <ul className="space-y-3">
                 <li><a href="#home" className="text-gray-300 hover:text-red-500 transition-colors">Home</a></li>
@@ -119,7 +148,7 @@ const ContactSection = () => {
             </div>
 
             {/* Skills */}
-            <div className="text-center md:text-left">
+            <div>
               <h3 className="text-xl font-bold text-white mb-6">Skills</h3>
               <ul className="space-y-3">
                 <li className="text-gray-300">Web Development</li>
@@ -131,21 +160,21 @@ const ContactSection = () => {
             </div>
 
             {/* Contact Info */}
-            <div className="text-center md:text-left">
+            <div>
               <h3 className="text-xl font-bold text-white mb-6">Contact Me</h3>
               <div className="space-y-4 mb-6">
-                <div className="flex items-center justify-center md:justify-start space-x-3">
+                <div className="flex items-center justify-center space-x-3">
                   <Mail className="w-5 h-5 text-red-500" />
                   <span className="text-gray-300">bkarthik1708@gmail.com</span>
                 </div>
-                <div className="flex items-center justify-center md:justify-start space-x-3">
+                <div className="flex items-center justify-center space-x-3">
                   <Phone className="w-5 h-5 text-red-500" />
                   <span className="text-gray-300">+91 6281023460</span>
                 </div>
               </div>
               
               {/* Social Links */}
-              <div className="flex justify-center md:justify-start space-x-4">
+              <div className="flex justify-center space-x-4">
                 <a 
                   href="https://www.linkedin.com/in/birajdaar-karthik-704181259/"
                   target="_blank"

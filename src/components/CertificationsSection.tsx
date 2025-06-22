@@ -2,8 +2,8 @@
 const CertificationsSection = () => {
   const certifications = [
     {
-      title: "Cisco Introduction to Cyber Security",
-      issuer: "Cisco",
+      title: "Introduction to Cyber Security",
+      issuer: "Cisco Networking Academy",
       year: "2024",
       icon: "🔒",
       color: "from-blue-500 to-cyan-500"
@@ -29,10 +29,10 @@ const CertificationsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-6 mb-16">
           <div className="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
-            ACHIEVEMENTS
+            CERTIFICATIONS
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
-            CERTIFICATIONS
+            MY CERTIFICATIONS
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
