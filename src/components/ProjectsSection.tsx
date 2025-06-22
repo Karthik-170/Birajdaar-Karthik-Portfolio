@@ -43,11 +43,6 @@ const ProjectsSection = () => {
                       alt={project.title}
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 right-4">
-                      <span className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-xl backdrop-blur-sm border border-white/20">
-                        🚀 Live
-                      </span>
-                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                   
@@ -81,7 +76,7 @@ const ProjectsSection = () => {
                         rel="noopener noreferrer"
                         className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-purple-500/25 backdrop-blur-sm border border-white/10 inline-block text-center"
                       >
-                        View in Github
+                        View on GitHub
                       </a>
                     </div>
                   </div>

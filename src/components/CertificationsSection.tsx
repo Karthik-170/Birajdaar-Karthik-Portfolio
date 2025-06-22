@@ -10,8 +10,8 @@ const CertificationsSection = () => {
     },
     {
       title: "Smart Coder",
-      issuer: "Smart Coder",
-      year: "2024",
+      issuer: "Smart Interviews",
+      year: "2025",
       icon: "💻",
       color: "from-green-500 to-teal-500"
     },

@@ -1,6 +1,5 @@
 
-import { Rocket } from 'lucide-react';
-import { Linkedin, Github } from 'lucide-react';
+import { Rocket, Mail, Phone, Linkedin, Github } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -72,26 +71,43 @@ const ContactSection = () => {
             </form>
 
             <div className="mt-12 pt-8 border-t border-gray-700">
-              <div className="flex justify-center space-x-6">
-                <a 
-                  href="https://www.linkedin.com/in/birajdaar-karthik-704181259/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-110"
-                >
-                  <Linkedin className="w-6 h-6" />
-                </a>
-                <a 
-                  href="https://github.com/Karthik-170"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full flex items-center justify-center hover:from-gray-800 hover:to-gray-900 transition-all duration-200 transform hover:scale-110"
-                >
-                  <Github className="w-6 h-6" />
-                </a>
+              <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
+                {/* Left side - Contact info */}
+                <div className="flex flex-col space-y-3 text-center lg:text-left">
+                  <div className="flex items-center justify-center lg:justify-start space-x-3">
+                    <Mail className="w-5 h-5 text-red-500" />
+                    <span className="text-gray-300">bkarthik1708@gmail.com</span>
+                  </div>
+                  <div className="flex items-center justify-center lg:justify-start space-x-3">
+                    <Phone className="w-5 h-5 text-red-500" />
+                    <span className="text-gray-300">+91 6281023460</span>
+                  </div>
+                </div>
+
+                {/* Right side - Social links */}
+                <div className="flex space-x-6">
+                  <a 
+                    href="https://www.linkedin.com/in/birajdaar-karthik-704181259/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transition-all duration-200 transform hover:scale-110"
+                  >
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                  <a 
+                    href="https://github.com/Karthik-170"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-full flex items-center justify-center hover:from-gray-800 hover:to-gray-900 transition-all duration-200 transform hover:scale-110"
+                  >
+                    <Github className="w-6 h-6" />
+                  </a>
+                </div>
               </div>
+
+              <hr className="border-gray-700 my-8" />
               
-              <div className="text-center mt-8">
+              <div className="text-center">
                 <p className="text-gray-400">© 2025 All rights reserved.</p>
               </div>
             </div>

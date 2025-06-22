@@ -28,9 +28,9 @@ const HeroSection = () => {
         setTimeout(() => {
           setCurrentPhase(currentPhase + 1);
           setDisplayedText('');
-        }, 1500); // Reduced from 2000ms to 1500ms
+        }, 1500);
       }
-    }, 50); // Reduced from 100ms to 50ms for faster typing
+    }, 30);
 
     return () => clearTimeout(timer);
   }, [displayedText, currentPhase]);
@@ -48,18 +48,19 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8 text-center lg:text-left">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+          <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <p className="text-2xl lg:text-3xl font-bold text-white">I'm</p>
+                <h1 className="text-3xl lg:text-5xl font-bold text-white leading-tight">
                   BIRAJDAAR
-                </h2>
-                <h2 className="text-4xl lg:text-6xl font-bold text-red-500 leading-tight">
+                </h1>
+                <h1 className="text-3xl lg:text-5xl font-bold text-red-500 leading-tight">
                   KARTHIK
-                </h2>
+                </h1>
               </div>
-              <div className="space-y-2 min-h-[80px] flex flex-col items-center lg:items-start">
-                <p className="text-2xl lg:text-3xl font-bold">
+              <div className="space-y-2 min-h-[60px] flex flex-col items-center lg:items-start">
+                <p className="text-xl lg:text-2xl font-bold">
                   <span className="text-white">I'm a </span>
                   <span className="text-red-500">{displayedText}</span>
                   <span className="animate-pulse text-red-500">|</span>
@@ -69,7 +70,7 @@ const HeroSection = () => {
             
             {/* Developer Description */}
             <div className="max-w-2xl">
-              <p className="text-gray-300 leading-relaxed text-lg">
+              <p className="text-gray-300 leading-relaxed text-base lg:text-lg">
                 I am a passionate developer with strong skills in Java, Data Structures and Algorithms (DSA), and full-stack web development. I specialize in building efficient, responsive, and user-friendly web applications using modern technologies and best practices.
               </p>
             </div>
@@ -80,9 +81,9 @@ const HeroSection = () => {
                 href="https://drive.google.com/file/d/18OYgN6M1UIFn-Eh0tOL19s30LsjOsHMf/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-red-500/25"
+                className="flex items-center gap-3 bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold text-base lg:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-red-500/25"
               >
-                <FileText className="w-6 h-6" />
+                <FileText className="w-5 h-5" />
                 Download Resume
               </a>
             </div>
@@ -91,7 +92,7 @@ const HeroSection = () => {
           {/* Hero Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-gradient-to-r from-purple-500 to-pink-500">
+              <div className="w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-gradient-to-r from-purple-500 to-pink-500">
                 <img 
                   src="/lovable-uploads/1dba9dc7-f380-42a7-900c-465099a39415.png" 
                   alt="Birajdaar Karthik" 
