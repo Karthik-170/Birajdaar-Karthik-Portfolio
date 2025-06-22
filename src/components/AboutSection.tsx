@@ -1,7 +1,7 @@
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen">
+    <section id="about" className="py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="space-y-8 text-center">
@@ -12,7 +12,7 @@ const AboutSection = () => {
               <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
             </div>
 
-            <div className="space-y-12">
+            <div className="space-y-8">
               {/* About Me Description */}
               <div className="text-left max-w-4xl mx-auto">
                 <p className="text-gray-300 leading-relaxed text-lg">

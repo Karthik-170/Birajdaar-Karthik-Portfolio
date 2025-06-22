@@ -47,18 +47,18 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8 text-center lg:text-left">
-            <div className="space-y-6">
-              <div className="space-y-3">
-                <p className="text-2xl lg:text-3xl font-bold text-white">I'm</p>
-                <h1 className="text-2xl lg:text-4xl font-bold text-white leading-tight">
+          <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <p className="text-xl lg:text-2xl font-bold text-white">I'm</p>
+                <h1 className="text-3xl lg:text-5xl font-bold text-white leading-tight">
                   BIRAJDAAR
                 </h1>
-                <h1 className="text-2xl lg:text-4xl font-bold text-red-500 leading-tight">
+                <h1 className="text-3xl lg:text-5xl font-bold text-red-500 leading-tight">
                   KARTHIK
                 </h1>
               </div>
-              <div className="space-y-2 min-h-[60px] flex flex-col items-center lg:items-start">
+              <div className="min-h-[60px] flex flex-col items-center lg:items-start">
                 <p className="text-xl lg:text-2xl font-bold">
                   <span className="text-white">I'm a </span>
                   <span className="text-red-500">{displayedText}</span>
@@ -75,7 +75,7 @@ const HeroSection = () => {
             </div>
             
             {/* Download Resume Button */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start pt-2">
               <a 
                 href="https://drive.google.com/file/d/18OYgN6M1UIFn-Eh0tOL19s30LsjOsHMf/view?usp=sharing"
                 target="_blank"

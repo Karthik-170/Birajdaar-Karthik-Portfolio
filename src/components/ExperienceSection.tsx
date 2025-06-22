@@ -10,51 +10,43 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
+    <section id="experience" className="py-20 bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-4 mb-16">
-          <p className="text-sm text-red-500 font-medium uppercase tracking-wide">
-            QUALIFICATION
-          </p>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+        <div className="text-center space-y-6 mb-16">
+          <div className="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
+            EXPERIENCE
+          </div>
+          <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
             MY EXPERIENCE
           </h2>
-          <div className="w-16 h-1 bg-red-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-12">
+        <div className="max-w-5xl mx-auto">
+          <div className="space-y-6">
             {experiences.map((exp, index) => (
-              <div key={index} className="relative">
-                <div className="grid md:grid-cols-4 gap-8 items-start">
-                  {/* Period */}
-                  <div className="text-right">
-                    <div className="inline-block bg-white px-4 py-2 rounded-full border-2 border-red-500 text-red-500 font-bold text-sm">
-                      {exp.period}
+              <div key={index} className="group">
+                <div className="flex flex-col sm:flex-row gap-6 p-6 bg-gradient-to-br from-gray-800/70 to-gray-900/70 border-2 border-gray-700/50 rounded-2xl hover:bg-gradient-to-br hover:from-gray-700/80 hover:to-gray-800/80 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 transform hover:-translate-y-3 backdrop-blur-lg">
+                  <div className="flex-shrink-0 flex justify-center sm:justify-start">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl shadow-current/30">
+                      💼
                     </div>
                   </div>
-
-                  {/* Timeline dot */}
-                  <div className="flex justify-center relative">
-                    <div className="w-4 h-4 bg-red-500 rounded-full relative z-10"></div>
-                    {index < experiences.length - 1 && (
-                      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-0.5 h-24 bg-gray-300"></div>
-                    )}
-                  </div>
-
-                  {/* Content */}
-                  <div className="md:col-span-2 space-y-3">
-                    <div>
-                      <p className="text-sm text-red-500 font-medium uppercase tracking-wide">
-                        {exp.company}
-                      </p>
-                      <h3 className="text-xl font-bold text-gray-900">
+                  
+                  <div className="flex-1 text-center sm:text-left">
+                    <div className="mb-2">
+                      <p className="text-red-400 font-bold text-base sm:text-lg">{exp.company}</p>
+                      <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300 leading-tight">
                         {exp.position}
                       </h3>
+                      <p className="text-purple-400 font-bold text-base sm:text-lg">{exp.period}</p>
                     </div>
-                    <p className="text-gray-600 leading-relaxed">
-                      {exp.description}
-                    </p>
+                    <p className="text-gray-400 leading-relaxed text-sm sm:text-base">{exp.description}</p>
+                    
+                    <div className="flex items-center justify-center sm:justify-start space-x-3 mt-4">
+                      <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse shadow-lg"></div>
+                      <span className="text-green-400 font-bold tracking-wide text-sm">Completed</span>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -8,7 +8,8 @@ const SkillsSection = () => {
         { name: "CSS", icon: "🎨" },
         { name: "JavaScript", icon: "⚡" },
         { name: "React", icon: "⚛️" },
-        { name: "TypeScript", icon: "🔷" }
+        { name: "TypeScript", icon: "🔷" },
+        { name: "Figma", icon: "🎭" }
       ]
     },
     {
@@ -36,8 +37,7 @@ const SkillsSection = () => {
         { name: "GitHub", icon: "🐱" },
         { name: "VS Code", icon: "💻" },
         { name: "AutoCAD", icon: "📐" },
-        { name: "Tableau", icon: "📊" },
-        { name: "Figma", icon: "🎭" }
+        { name: "Tableau", icon: "📊" }
       ]
     },
     {
@@ -50,7 +50,7 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-900 text-white">
+    <section id="skills" className="py-16 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <p className="text-sm text-red-500 font-medium uppercase tracking-wide">
