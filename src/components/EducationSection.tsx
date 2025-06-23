@@ -1,4 +1,3 @@
-
 const EducationSection = () => {
   const educationData = [
     {
@@ -37,7 +36,7 @@ const EducationSection = () => {
           <h2 className="text-3xl font-bold text-white uppercase tracking-wider">
             EDUCATION
           </h2>
-          <div className="w-16 h-1 bg-red-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="max-w-5xl mx-auto">
@@ -56,8 +55,8 @@ const EducationSection = () => {
                       {edu.institution}{edu.location && `, ${edu.location}`}
                     </h4>
                     <p className="text-gray-300 font-semibold text-base sm:text-lg mb-2 group-hover:text-white">{edu.degree}</p>
-                    <p className="text-purple-400 font-bold text-base sm:text-lg mb-1 group-hover:text-white">{edu.duration}</p>
-                    <p className="text-green-400 font-bold text-base sm:text-lg mb-3 group-hover:text-white">{edu.grade}</p>
+                    <p className="text-white font-bold text-base sm:text-lg mb-1 group-hover:text-white">{edu.duration}</p>
+                    <p className="text-white font-bold text-base sm:text-lg mb-3 group-hover:text-white">{edu.grade}</p>
                     
                     {edu.description && (
                       <p className="text-gray-400 leading-relaxed text-sm sm:text-base group-hover:text-white">{edu.description}</p>

@@ -1,4 +1,3 @@
-
 const ExperienceSection = () => {
   const experiences = [
     {
@@ -32,17 +31,17 @@ const ExperienceSection = () => {
                   
                   <div className="flex-1 text-center sm:text-left">
                     <div className="mb-2">
-                      <p className="text-red-400 font-bold text-base sm:text-lg group-hover:text-white">{exp.company}</p>
+                      <p className="text-white font-bold text-base sm:text-lg group-hover:text-white">{exp.company}</p>
                       <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-white transition-colors duration-300 leading-tight">
                         {exp.position}
                       </h3>
-                      <p className="text-purple-400 font-bold text-base sm:text-lg group-hover:text-white">{exp.period}</p>
+                      <p className="text-white font-bold text-base sm:text-lg group-hover:text-white">{exp.period}</p>
                     </div>
                     <p className="text-gray-400 leading-relaxed text-sm sm:text-base">{exp.description}</p>
                     
                     <div className="flex items-center justify-center sm:justify-start space-x-3 mt-4">
                       <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse shadow-lg"></div>
-                      <span className="text-green-400 font-bold tracking-wide text-sm group-hover:text-white">Completed</span>
+                      <span className="text-white font-bold tracking-wide text-sm group-hover:text-white">Completed</span>
                     </div>
                   </div>
                 </div>

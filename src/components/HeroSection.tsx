@@ -1,5 +1,4 @@
-
-import { FileText } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
@@ -27,9 +26,9 @@ const HeroSection = () => {
         setTimeout(() => {
           setCurrentPhase(currentPhase + 1);
           setDisplayedText('');
-        }, 1500);
+        }, 2000);
       }
-    }, 15);
+    }, 100);
 
     return () => clearTimeout(timer);
   }, [displayedText, currentPhase]);
@@ -67,14 +66,12 @@ const HeroSection = () => {
               </div>
             </div>
             
-            {/* Developer Description */}
             <div className="max-w-2xl">
               <p className="text-gray-300 leading-relaxed text-base lg:text-lg">
                 I am a passionate developer with strong skills in Java, Data Structures and Algorithms (DSA), and full-stack web development. I specialize in building efficient, responsive, and user-friendly web applications using modern technologies and best practices.
               </p>
             </div>
             
-            {/* Download Resume Button */}
             <div className="flex justify-center lg:justify-start pt-2">
               <a 
                 href="https://drive.google.com/file/d/1NNwfC_zkUjaCqf6R4T0rU9gAYdV1Mz0P/view?usp=sharing"
@@ -82,7 +79,7 @@ const HeroSection = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold text-base lg:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-red-500/25"
               >
-                <FileText className="w-5 h-5" />
+                <Download className="w-5 h-5" />
                 Download Resume
               </a>
             </div>

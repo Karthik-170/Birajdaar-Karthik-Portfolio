@@ -1,4 +1,3 @@
-
 const CertificationsSection = () => {
   const certifications = [
     {
@@ -31,6 +30,7 @@ const CertificationsSection = () => {
           <h2 className="text-3xl font-bold text-white uppercase tracking-wider">
             CERTIFICATIONS
           </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="max-w-5xl mx-auto">
