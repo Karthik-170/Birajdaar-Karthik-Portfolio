@@ -6,7 +6,7 @@ const CertificationsSection = () => {
       issuer: "Cisco Networking Academy",
       year: "2024",
       icon: "🔒",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-white to-gray-300"
     },
     {
       title: "Smart Coder",
@@ -31,7 +31,6 @@ const CertificationsSection = () => {
           <h2 className="text-3xl font-bold text-white uppercase tracking-wider">
             CERTIFICATIONS
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="max-w-5xl mx-auto">
@@ -49,12 +48,12 @@ const CertificationsSection = () => {
                     <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-white transition-colors duration-300 leading-tight mb-2">
                       {cert.title}
                     </h3>
-                    <p className="text-red-400 font-bold text-base sm:text-lg group-hover:text-white">{cert.issuer}</p>
-                    <p className="text-purple-400 font-bold text-base sm:text-lg group-hover:text-white">{cert.year}</p>
+                    <p className="text-white font-bold text-base sm:text-lg group-hover:text-white">{cert.issuer}</p>
+                    <p className="text-white font-bold text-base sm:text-lg group-hover:text-white">{cert.year}</p>
                     
                     <div className="flex items-center justify-center sm:justify-start space-x-3 mt-4">
                       <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse shadow-lg"></div>
-                      <span className="text-green-400 font-bold tracking-wide text-sm group-hover:text-white">Verified & Completed</span>
+                      <span className="text-white font-bold tracking-wide text-sm group-hover:text-white">Verified & Completed</span>
                     </div>
                   </div>
                 </div>

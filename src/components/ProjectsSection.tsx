@@ -22,7 +22,6 @@ const ProjectsSection = () => {
           <h2 className="text-3xl font-bold text-white uppercase tracking-wider">
             PROJECTS
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="text-center mb-12">
@@ -52,7 +51,7 @@ const ProjectsSection = () => {
                       </h3>
                       
                       <div className="mb-6">
-                        <h4 className="text-sm font-bold text-purple-400 uppercase tracking-wider mb-3">Technologies Used</h4>
+                        <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-3">Technologies Used</h4>
                         <div className="flex flex-wrap gap-2">
                           {project.tools.map((tool, toolIndex) => (
                             <span key={toolIndex} className="bg-gradient-to-r from-purple-600/30 to-pink-600/30 text-purple-300 px-3 py-1 rounded-full text-sm font-medium border border-purple-500/40 backdrop-blur-sm shadow-lg hover:scale-105 transition-transform duration-200">

@@ -1,3 +1,4 @@
+
 const SkillsSection = () => {
   const skillCategories = [
     {
@@ -52,10 +53,9 @@ const SkillsSection = () => {
     <section id="skills" className="py-12 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
-          <p className="text-sm text-red-500 font-medium uppercase tracking-wide">
+          <h2 className="text-3xl font-bold text-white uppercase tracking-wider">
             SKILLS
-          </p>
-          <div className="w-16 h-1 bg-red-500 mx-auto"></div>
+          </h2>
         </div>
 
         <div className="max-w-6xl mx-auto">
