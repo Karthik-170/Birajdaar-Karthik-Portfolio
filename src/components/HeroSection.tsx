@@ -77,7 +77,7 @@ const HeroSection = () => {
             {/* Download Resume Button */}
             <div className="flex justify-center lg:justify-start pt-2">
               <a 
-                href="https://drive.google.com/file/d/18OYgN6M1UIFn-Eh0tOL19s30LsjOsHMf/view?usp=sharing"
+                href="https://drive.google.com/file/d/1NNwfC_zkUjaCqf6R4T0rU9gAYdV1Mz0P/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-gradient-to-r from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white px-6 py-3 rounded-xl font-semibold text-base lg:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-red-500/25"
