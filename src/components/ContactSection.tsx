@@ -26,11 +26,14 @@ const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // Here you would typically send the data to your backend
+      console.log('Form submitted:', formData);
       
       toast({
-        title: "Message Sent!",
+        title: "Message Sent Successfully!",
         description: "Thank you for your message. I'll get back to you soon!",
       });
       
@@ -70,7 +73,7 @@ const ContactSection = () => {
           <div className="bg-gradient-to-br from-gray-800/70 to-gray-900/70 border-2 border-gray-700/50 rounded-2xl p-8 backdrop-blur-lg">
             <div className="flex items-center gap-3 mb-8">
               <Rocket className="w-6 h-6 text-purple-500" />
-              <h3 className="text-2xl font-bold text-white">Email Me</h3>
+              <h3 className="text-2xl font-bold text-white">Send me a message</h3>
             </div>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -127,11 +130,14 @@ const ContactSection = () => {
                 disabled={isSubmitting}
                 className="w-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white py-3 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-purple-500/25 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Sending...' : 'Send'}
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
         </div>
+
+        {/* Separator Line */}
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent mb-12"></div>
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-center">
@@ -143,6 +149,7 @@ const ContactSection = () => {
                 <li><a href="#about" className="text-gray-300 hover:text-red-500 transition-colors">About</a></li>
                 <li><a href="#skills" className="text-gray-300 hover:text-red-500 transition-colors">Skills</a></li>
                 <li><a href="#projects" className="text-gray-300 hover:text-red-500 transition-colors">Projects</a></li>
+                <li><a href="#experience" className="text-gray-300 hover:text-red-500 transition-colors">Experience</a></li>
                 <li><a href="#contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</a></li>
               </ul>
             </div>
@@ -151,10 +158,8 @@ const ContactSection = () => {
             <div>
               <h3 className="text-xl font-bold text-white mb-6">Skills</h3>
               <ul className="space-y-3">
-                <li className="text-gray-300">Web Development</li>
+                <li className="text-gray-300">Full Stack Development</li>
                 <li className="text-gray-300">Java Development</li>
-                <li className="text-gray-300">React</li>
-                <li className="text-gray-300">Node.js</li>
                 <li className="text-gray-300">Cybersecurity</li>
               </ul>
             </div>
@@ -195,8 +200,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <hr className="border-gray-700 mb-8" />
-          
           <div className="text-center">
             <p className="text-gray-400">© 2025 All rights reserved.</p>
           </div>

@@ -22,9 +22,6 @@ const ProjectsSection = () => {
           <div className="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
             PROJECTS
           </div>
-          <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
-            MY PROJECTS
-          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
@@ -48,7 +45,9 @@ const ProjectsSection = () => {
                   
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300 leading-tight">
+                      <h3 className={`font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300 leading-tight ${
+                        project.title.length > 50 ? 'text-lg sm:text-xl' : 'text-2xl'
+                      }`}>
                         {project.title}
                       </h3>
                       

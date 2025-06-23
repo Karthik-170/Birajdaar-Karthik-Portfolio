@@ -37,9 +37,6 @@ const EducationSection = () => {
           <div className="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
             EDUCATION
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold">
-            MY EDUCATION
-          </h2>
           <div className="w-16 h-1 bg-red-500 mx-auto"></div>
         </div>
 
