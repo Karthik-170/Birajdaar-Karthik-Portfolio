@@ -32,8 +32,8 @@ const ProjectsSection = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-lg border-2 border-gray-700/50 rounded-3xl overflow-hidden hover:bg-gradient-to-br hover:from-gray-700/70 hover:to-gray-800/70 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 group transform hover:-translate-y-2">
-                <div className="p-8 space-y-6">
+              <div key={index} className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-lg border-2 border-gray-700/50 rounded-3xl overflow-hidden hover:bg-gradient-to-br hover:from-gray-700/70 hover:to-gray-800/70 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 group transform hover:-translate-y-2 flex flex-col">
+                <div className="p-8 space-y-6 flex-1 flex flex-col">
                   <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                     <img 
                       src={project.image} 
@@ -43,7 +43,7 @@ const ProjectsSection = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                   
-                  <div className="space-y-6">
+                  <div className="space-y-6 flex-1 flex flex-col">
                     <div>
                       <h3 className={`font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300 leading-tight ${
                         project.title.length > 50 ? 'text-lg sm:text-xl' : 'text-2xl'
@@ -63,12 +63,12 @@ const ProjectsSection = () => {
                       </div>
                     </div>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-4 flex-1">
                       <h4 className="text-lg font-semibold text-gray-300">Project Overview</h4>
                       <p className="text-gray-400 leading-relaxed text-sm">{project.description}</p>
                     </div>
                     
-                    <div className="pt-4">
+                    <div className="pt-4 mt-auto">
                       <a 
                         href="https://github.com/Karthik-170"
                         target="_blank"

@@ -50,12 +50,12 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 min-w-0 truncate">
-            BIRAJDAAR KARTHIK
+          <div className="text-sm sm:text-lg lg:text-xl xl:text-2xl font-bold text-gray-900 flex-1 min-w-0">
+            <span className="truncate block">BIRAJDAAR KARTHIK</span>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6 lg:space-x-8">
+          <div className="hidden md:flex space-x-6 lg:space-x-8 flex-shrink-0">
             {navItems.map((item) => (
               <button
                 key={item.name}
@@ -72,7 +72,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex-shrink-0">
+          <div className="md:hidden flex-shrink-0 ml-2">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-600 hover:text-gray-900"

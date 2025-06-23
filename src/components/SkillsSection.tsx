@@ -1,4 +1,3 @@
-
 const SkillsSection = () => {
   const skillCategories = [
     {
@@ -56,9 +55,6 @@ const SkillsSection = () => {
           <p className="text-sm text-red-500 font-medium uppercase tracking-wide">
             SKILLS
           </p>
-          <h2 className="text-4xl lg:text-5xl font-bold">
-            MY EXPERTISE
-          </h2>
           <div className="w-16 h-1 bg-red-500 mx-auto"></div>
         </div>
 

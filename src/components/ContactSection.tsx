@@ -170,11 +170,15 @@ const ContactSection = () => {
               <div className="space-y-4 mb-6">
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="w-5 h-5 text-red-500" />
-                  <span className="text-gray-300">bkarthik1708@gmail.com</span>
+                  <a href="mailto:bkarthik1708@gmail.com" className="text-gray-300 hover:text-red-500 transition-colors">
+                    bkarthik1708@gmail.com
+                  </a>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <Phone className="w-5 h-5 text-red-500" />
-                  <span className="text-gray-300">+91 6281023460</span>
+                  <a href="tel:+916281023460" className="text-gray-300 hover:text-red-500 transition-colors">
+                    +91 6281023460
+                  </a>
                 </div>
               </div>
               
