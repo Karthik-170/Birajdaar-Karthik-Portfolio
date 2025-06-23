@@ -59,4 +59,5 @@ shadcn-ui
 Tailwind CSS
 
 About Birajdaar Karthik
+
 Birajdaar Karthik is a passionate developer and cybersecurity enthusiast skilled in Java, DSA, and full-stack web development. He builds secure, efficient, and user-friendly applications using modern technologies with a strong focus on design, usability, and performance.
