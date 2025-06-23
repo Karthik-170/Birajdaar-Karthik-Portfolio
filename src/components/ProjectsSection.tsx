@@ -19,9 +19,9 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-6 mb-16">
-          <div className="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
+          <h2 className="text-3xl font-bold text-white uppercase tracking-wider">
             PROJECTS
-          </div>
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
                   
                   <div className="space-y-6 flex-1 flex flex-col">
                     <div>
-                      <h3 className={`font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300 leading-tight ${
+                      <h3 className={`font-bold text-white mb-4 group-hover:text-white transition-all duration-300 leading-tight ${
                         project.title.length > 50 ? 'text-lg sm:text-xl' : 'text-2xl'
                       }`}>
                         {project.title}

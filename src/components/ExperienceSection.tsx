@@ -13,9 +13,9 @@ const ExperienceSection = () => {
     <section id="experience" className="py-20 bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-6 mb-16">
-          <div className="inline-block bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
+          <h2 className="text-3xl font-bold text-white uppercase tracking-wider">
             EXPERIENCE
-          </div>
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded-full"></div>
         </div>
 
@@ -32,17 +32,17 @@ const ExperienceSection = () => {
                   
                   <div className="flex-1 text-center sm:text-left">
                     <div className="mb-2">
-                      <p className="text-red-400 font-bold text-base sm:text-lg">{exp.company}</p>
-                      <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-purple-400 transition-colors duration-300 leading-tight">
+                      <p className="text-red-400 font-bold text-base sm:text-lg group-hover:text-white">{exp.company}</p>
+                      <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-white transition-colors duration-300 leading-tight">
                         {exp.position}
                       </h3>
-                      <p className="text-purple-400 font-bold text-base sm:text-lg">{exp.period}</p>
+                      <p className="text-purple-400 font-bold text-base sm:text-lg group-hover:text-white">{exp.period}</p>
                     </div>
                     <p className="text-gray-400 leading-relaxed text-sm sm:text-base">{exp.description}</p>
                     
                     <div className="flex items-center justify-center sm:justify-start space-x-3 mt-4">
                       <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse shadow-lg"></div>
-                      <span className="text-green-400 font-bold tracking-wide text-sm">Completed</span>
+                      <span className="text-green-400 font-bold tracking-wide text-sm group-hover:text-white">Completed</span>
                     </div>
                   </div>
                 </div>
