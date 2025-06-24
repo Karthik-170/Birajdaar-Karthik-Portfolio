@@ -1,25 +1,24 @@
 
+import { Check } from "lucide-react";
+
 const CertificationsSection = () => {
   const certifications = [
     {
       title: "Introduction to Cyber Security",
       issuer: "Cisco Networking Academy",
       year: "2024",
-      icon: "🔒",
       status: "Verified & Completed"
     },
     {
       title: "Smart Coder",
       issuer: "Smart Interviews",
       year: "2025",
-      icon: "💻",
       status: "Verified & Completed"
     },
     {
       title: "Certification of completion of Java Full Stack",
       issuer: "Edu Skills",
       year: "2025",
-      icon: "☕",
       status: "Verified & Completed"
     }
   ];
@@ -38,23 +37,18 @@ const CertificationsSection = () => {
           <div className="space-y-6">
             {certifications.map((cert, index) => (
               <div key={index} className="group">
-                <div className="flex flex-col sm:flex-row gap-6 p-6 bg-gradient-to-br from-gray-800/70 to-gray-900/70 border-2 border-gray-700/50 rounded-2xl hover:bg-gradient-to-br hover:from-gray-700/80 hover:to-gray-800/80 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 transform hover:-translate-y-3 backdrop-blur-lg">
-                  <div className="flex-shrink-0 flex justify-center sm:justify-start">
-                    <div className="w-16 h-16 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl">
-                      {cert.icon}
-                    </div>
-                  </div>
-                  
-                  <div className="flex-1 text-center sm:text-left">
+                <div className="flex items-center justify-between p-6 bg-gradient-to-br from-gray-800/70 to-gray-900/70 border-2 border-gray-700/50 rounded-2xl hover:bg-gradient-to-br hover:from-gray-700/80 hover:to-gray-800/80 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 transform hover:-translate-y-3 backdrop-blur-lg">
+                  <div className="flex-1">
                     <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-white transition-colors duration-300 leading-tight mb-2">
                       {cert.title}
                     </h3>
                     <p className="text-white font-bold text-base sm:text-lg group-hover:text-white">{cert.issuer}</p>
                     <p className="text-white font-bold text-base sm:text-lg group-hover:text-white">{cert.year}</p>
-                    
-                    <div className="flex items-center justify-center sm:justify-start space-x-3 mt-4">
-                      <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse shadow-lg"></div>
-                      <span className="text-white font-bold tracking-wide text-sm group-hover:text-white">{cert.status}</span>
+                  </div>
+                  
+                  <div className="flex-shrink-0 ml-6">
+                    <div className="bg-green-500 rounded-full p-2 flex items-center justify-center">
+                      <Check className="w-5 h-5 text-white" />
                     </div>
                   </div>
                 </div>
