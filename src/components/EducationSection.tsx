@@ -23,7 +23,7 @@ const EducationSection = () => {
       institution: "Oxford Grammar School",
       location: "",
       degree: "Class X",
-      duration: "May 2020",
+      duration: "2020",
       grade: "GPA: 9.3/10.0",
       logo: "🎓",
       description: "Completed high school education with excellent academic performance."
