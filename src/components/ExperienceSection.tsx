@@ -7,7 +7,6 @@ const ExperienceSection = () => {
       position: "ANDROID DEVELOPER VIRTUAL INTERNSHIP",
       description: "Completed Google's Android Developer Virtual Internship program, gaining hands-on experience in Android app development, learning modern development practices and Google's development tools.",
       icon: "💼",
-      status: "Completed"
     }
   ];
 
