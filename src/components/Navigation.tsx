@@ -50,8 +50,9 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-sm sm:text-lg lg:text-xl xl:text-2xl font-bold text-gray-900 flex-1 min-w-0">
-            <span className="truncate block">BIRAJDAAR KARTHIK</span>
+          <div className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold text-gray-900 flex-1 min-w-0 pr-4">
+            <span className="block sm:hidden text-sm leading-tight">BIRAJDAAR<br />KARTHIK</span>
+            <span className="hidden sm:block truncate">BIRAJDAAR KARTHIK</span>
           </div>
           
           {/* Desktop Navigation */}

@@ -1,10 +1,13 @@
+
 const ExperienceSection = () => {
   const experiences = [
     {
       period: "Oct-Dec 2024",
       company: "GOOGLE",
       position: "ANDROID DEVELOPER VIRTUAL INTERNSHIP",
-      description: "Completed Google's Android Developer Virtual Internship program, gaining hands-on experience in Android app development, learning modern development practices and Google's development tools."
+      description: "Completed Google's Android Developer Virtual Internship program, gaining hands-on experience in Android app development, learning modern development practices and Google's development tools.",
+      icon: "💼",
+      status: "Completed"
     }
   ];
 
@@ -24,8 +27,8 @@ const ExperienceSection = () => {
               <div key={index} className="group">
                 <div className="flex flex-col sm:flex-row gap-6 p-6 bg-gradient-to-br from-gray-800/70 to-gray-900/70 border-2 border-gray-700/50 rounded-2xl hover:bg-gradient-to-br hover:from-gray-700/80 hover:to-gray-800/80 hover:border-purple-500/60 hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-500 transform hover:-translate-y-3 backdrop-blur-lg">
                   <div className="flex-shrink-0 flex justify-center sm:justify-start">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl shadow-current/30">
-                      💼
+                    <div className="w-16 h-16 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl">
+                      {exp.icon}
                     </div>
                   </div>
                   
@@ -41,7 +44,7 @@ const ExperienceSection = () => {
                     
                     <div className="flex items-center justify-center sm:justify-start space-x-3 mt-4">
                       <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse shadow-lg"></div>
-                      <span className="text-white font-bold tracking-wide text-sm group-hover:text-white">Completed</span>
+                      <span className="text-white font-bold tracking-wide text-sm group-hover:text-white">{exp.status}</span>
                     </div>
                   </div>
                 </div>

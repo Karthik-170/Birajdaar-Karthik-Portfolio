@@ -1,3 +1,4 @@
+
 const EducationSection = () => {
   const educationData = [
     {
@@ -15,7 +16,7 @@ const EducationSection = () => {
       degree: "Intermediate (MPC)",
       duration: "2022",
       grade: "82.5%",
-      logo: "📚",
+      logo: "🎓",
       description: "Completed intermediate education with Mathematics, Physics, and Chemistry."
     },
     {
@@ -24,7 +25,7 @@ const EducationSection = () => {
       degree: "Class X",
       duration: "May 2020",
       grade: "GPA: 9.3/10.0",
-      logo: "🏫",
+      logo: "🎓",
       description: "Completed high school education with excellent academic performance."
     }
   ];
@@ -32,7 +33,7 @@ const EducationSection = () => {
   return (
     <section id="education" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-4 mb-16">
+        <div className="text-center space-y-6 mb-16">
           <h2 className="text-3xl font-bold text-white uppercase tracking-wider">
             EDUCATION
           </h2>
@@ -45,7 +46,7 @@ const EducationSection = () => {
               <div key={index} className="group">
                 <div className="flex flex-col sm:flex-row gap-6 p-6 bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-2 border-gray-700/50 rounded-2xl hover:bg-gradient-to-br hover:from-gray-700/80 hover:to-gray-800/80 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-500 transform hover:-translate-y-2 backdrop-blur-sm">
                   <div className="flex-shrink-0 flex justify-center sm:justify-start">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-600 via-pink-600 to-red-600 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-500 shadow-xl shadow-purple-500/30">
+                    <div className="w-16 h-16 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-500 shadow-xl">
                       {edu.logo}
                     </div>
                   </div>

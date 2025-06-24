@@ -1,3 +1,4 @@
+
 const ProjectsSection = () => {
   const projects = [
     {
@@ -8,7 +9,7 @@ const ProjectsSection = () => {
     },
     {
       title: "ML Approach using Statistical Models for Early Detection of Cardiac Arrest",
-      image: "/lovable-uploads/76aee953-03b0-4dea-b6f0-d75416477d70.png",
+      image: "/lovable-uploads/2f082d58-62f4-42bc-b3dd-9017decafe90.png",
       tools: ["Machine Learning", "Statistical Models", "Healthcare AI", "Python"],
       description: "By analyzing key vital signs—heart rate, oxygen levels, breathing rate, and temperature etc. This AI-powered approach enhances early detection, enabling doctors to respond swiftly and take preventive measures."
     }
@@ -45,7 +46,7 @@ const ProjectsSection = () => {
                   <div className="space-y-6 flex-1 flex flex-col">
                     <div>
                       <h3 className={`font-bold text-white mb-4 group-hover:text-white transition-all duration-300 leading-tight ${
-                        project.title.length > 50 ? 'text-lg sm:text-xl' : 'text-2xl'
+                        project.title.length > 50 ? 'text-lg sm:text-xl' : 'text-xl sm:text-2xl'
                       }`}>
                         {project.title}
                       </h3>
