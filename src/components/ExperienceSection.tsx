@@ -41,10 +41,7 @@ const ExperienceSection = () => {
                     </div>
                     <p className="text-gray-400 leading-relaxed text-sm sm:text-base">{exp.description}</p>
                     
-                    <div className="flex items-center justify-center sm:justify-start space-x-3 mt-4">
-                      <div className="w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse shadow-lg"></div>
-                      <span className="text-white font-bold tracking-wide text-sm group-hover:text-white">{exp.status}</span>
-                    </div>
+                  
                   </div>
                 </div>
               </div>
