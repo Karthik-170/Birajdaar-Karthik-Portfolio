@@ -64,25 +64,25 @@ const SkillsSection = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="space-y-12">
+          <div className="space-y-16">
             {skillCategories.map((category, categoryIndex) => (
               <div key={categoryIndex} className="text-center">
-                <h3 className="text-xl font-bold text-white mb-8">{category.category}</h3>
-                <div className="flex flex-wrap justify-center gap-4">
+                <h3 className="text-2xl font-bold text-white mb-12">{category.category}</h3>
+                <div className="flex flex-wrap justify-center gap-8">
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex} className="group">
-                      <div className="bg-white/10 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-4 w-20 h-20 flex flex-col items-center justify-center hover:bg-white/20 hover:border-red-400/50 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-red-500/20">
+                      <div className="bg-white/10 backdrop-blur-sm border border-gray-700/50 rounded-3xl p-8 w-32 h-32 flex flex-col items-center justify-center hover:bg-white/20 hover:border-red-400/50 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-red-500/20">
                         {skill.isImage ? (
                           <img 
                             src={skill.icon} 
                             alt={skill.name} 
-                            className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-200"
+                            className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-200"
                           />
                         ) : (
-                          <div className="text-xl mb-1 group-hover:scale-110 transition-transform duration-200">{skill.icon}</div>
+                          <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-200">{skill.icon}</div>
                         )}
                       </div>
-                      <p className="mt-2 text-xs font-medium text-white group-hover:text-white transition-colors duration-200">{skill.name}</p>
+                      <p className="mt-3 text-sm font-medium text-white group-hover:text-white transition-colors duration-200">{skill.name}</p>
                     </div>
                   ))}
                 </div>
