@@ -1,4 +1,3 @@
-
 const SkillsSection = () => {
   const skillCategories = [
     {
@@ -24,34 +23,25 @@ const SkillsSection = () => {
     {
       category: "Backend Development", 
       skills: [
-        { name: "Node.js", icon: "🟢", isImage: false },
-        { name: "MongoDB", icon: "🍃", isImage: false },
-        { name: "Express", icon: "⚡", isImage: false },
-        { name: "MySQL", icon: "🐬", isImage: false }
+        { name: "Node.js", icon: "/lovable-uploads/fdc37edf-6700-49c3-826e-e8cf948c2381.png", isImage: true },
+        { name: "MongoDB", icon: "/lovable-uploads/1fadce29-b15d-4b7f-90d1-dc5c6e7d4059.png", isImage: true },
+        { name: "Express", icon: "/lovable-uploads/bbc81df5-86d3-433a-bfcf-ece9a05ef9fb.png", isImage: true },
+        { name: "Git", icon: "/lovable-uploads/fe2d5cbd-5dd8-4b36-9387-0a6674676eb6.png", isImage: true }
       ]
     },
     {
       category: "Development Tools",
       skills: [
-        { name: "Git", icon: "🔴", isImage: false },
-        { name: "GitHub", icon: "🐱", isImage: false },
-        { name: "VS Code", icon: "💙", isImage: false },
-        { name: "Docker", icon: "🐳", isImage: false }
-      ]
-    },
-    {
-      category: "Design & Visualization",
-      skills: [
-        { name: "AutoCAD", icon: "📐", isImage: false },
-        { name: "Tableau", icon: "📊", isImage: false },
-        { name: "Photoshop", icon: "🎨", isImage: false },
-        { name: "Canva", icon: "🎯", isImage: false }
+        { name: "GitHub", icon: "/lovable-uploads/bbcdf7fe-db91-4d47-82a9-0bc9dd14a499.png", isImage: true },
+        { name: "VS Code", icon: "/lovable-uploads/b7ba0267-5454-45dc-9f25-92856645bf1a.png", isImage: true },
+        { name: "AutoCAD", icon: "/lovable-uploads/27f36f40-581a-4db2-ba24-62b60ca07e7c.png", isImage: true },
+        { name: "Tableau", icon: "/lovable-uploads/d5a758d5-14fe-4359-9783-899546b88984.png", isImage: true }
       ]
     },
     {
       category: "Cybersecurity",
       skills: [
-        { name: "Network Security", icon: "🔐", isImage: false },
+        { name: "Network Security", icon: "/lovable-uploads/a2f5b8fa-a5fb-429b-b294-c9a61eb9b1a1.png", isImage: true },
         { name: "Risk Assessment", icon: "⚠️", isImage: false },
         { name: "Incident Response", icon: "🛡️", isImage: false },
         { name: "Security Protocols", icon: "🔒", isImage: false }
